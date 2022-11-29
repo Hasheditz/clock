@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <!------digital clock start -->
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>
+                <span id="month">Month</span>
+                <span id="daynum">00</span>
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+        <!----digtal clock ends-->
+
+            <!-- <script type="text/javascript">
+                function updateClock(){
+                    var now = new Date();
+                    var dname = now.getDay(),
+                    mo = now.getMonth(),
+                    dnum = now.getDate(),
+                    yr = now.getFullYear(),
+                    hou = now.getHours(),
+                    min = now.getMinutes(),
+                    sec = now.getSeconds(),
+                    pe = "AM";
+                
+
+                    var months = ["January", "february" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"];
+
+                    var week = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"];
+
+                    var ids = ["dayname","month" , "daynum" , "year" , "hour" , "minutes" , "seconds" , "period"];
+
+                    var values = [dname , mo ,dnum , yr , hou , min , sec , pe];
+
+                    for(var i = 0 ; i < ids.length ; i++)
+                    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+                    
+    
+                }
+                    function initClock(){
+                    updatecloCk();
+                    window.setInterval("updateClock()" , 1);
+                } 
+            </script> -->
+    </body>
+</html>
